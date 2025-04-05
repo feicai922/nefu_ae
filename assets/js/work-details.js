@@ -276,7 +276,7 @@ async function processImage(fileInput, function_name, imageDisplay, responseCont
 //   formData.append('image', fileInput.files[0]);
 
 //   try {
-//       const response = await fetch('http://127.0.0.1:8080/api/'+function_name+ '_image', {
+//       const response = await fetch(port+'/api/'+function_name+ '_image', {
 //           method: 'POST',
 //           body: formData
 //       })
