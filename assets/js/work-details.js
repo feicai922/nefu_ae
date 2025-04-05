@@ -229,7 +229,7 @@ document.querySelectorAll("#start-process").forEach(button => {
     }
   })
 })
-const port = "https://nefu.free.idcfengye.com";
+const port = "http://nefu.free.idcfengye.com";
 // 图片处理函数
 async function processImage(fileInput, function_name, imageDisplay, responseContainer) {
 
