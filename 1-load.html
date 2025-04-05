@@ -1,0 +1,230 @@
+<div class="work-details-container" id="load">
+    <div class="container">
+        <div class="details-video-show theme-wd pl-15 mb-30" id="video-display">
+            <div class="demo-area pt-30 pb-30">
+                <div class="section-title">
+                    <h2>路径规划导航</h2>
+                    <p>在智慧物流系统中，无人机和无人车的路径规划导航模块是高效物流的关键。
+                        该模块结合传感器数据和AI视觉算法，通过智能算法，为无人设备实时规划最优路径。
+                        它支持动态避障和多智能体协同，可应对复杂环境和突发状况，确保配送安全高效。这一模块不仅优化配送时间，还降低运营成本，
+                        为智慧物流提供强大支持。</p>
+                </div>
+                <div class="demon-info mt-35">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                            <div class="demo-item">
+                                <i class="flaticon-settings-1"></i>
+                                <div class="content">
+                                    <h5>环境感知</h5>
+                                    <p>实时检测路径中的行人、车辆、障碍物等目标物体，并为后续路径规划提供详细数据。</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="flaticon-responsive"></i>
+                                <div class="content">
+                                    <h5>路径规划</h5>
+                                    <p>动态调整路径规划策略，确保目标对象能够以最短时间、最高效率抵达目的地。</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="flaticon-web-design"></i>
+                                <div class="content">
+                                    <h5>导航指引</h5>
+                                    <p>将规划好的路径以直观的方式呈现给使用者，
+                                        通过可视化界面进行实时导航指引。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 pl-30">
+                            <div class="video-area">
+                                <div class="video-thum">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <video id="display-video">
+                                        <source src="assets//video/demo.mp4" type="video/mp4">
+                                    </video>
+                                    <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details-video-show theme-wd pl-15 mb-30" id="local-test">
+            <div class="demo-area pt-30 pb-20">
+                <div class="section-title">
+                    <h2>本地案例测试</h2>
+                    <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                </div>
+                <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                    <div class="video-area">
+                        <div class="video-thum ">
+                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                            <div class="before-deal" id="before-deal">
+                                <label>
+                                    <!-- todo 处理前显示的内容 -->
+                                    <img class="local-test-result result-img" id="after-deal-image" src="" alt="" >
+                                    <div class="local-test-result" id="after-deal-video">
+                                        <video id="display-video local-video-display">
+                                            <source src="assets//video/demo.mp4" type="video/mp4">
+                                        </video>
+                                        <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                    </div>
+                                </label>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upload-container theme-demo">
+                <h3>图片/视频处理</h3>
+                <div class="them-switch button-group mt-15 mb-15">
+                    <button class="is-checked local-load" data-target="image-test"><strong>图片处理</strong></button>
+                    <button class="local-load" data-target="video-test"><strong>视频处理</strong></button>
+                </div>
+                <div class="upload-box">
+                    <div class="display-result" id="load-image-container">
+                        <input type="file" class="image-test" id="imageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                        <label for="imageUpload">
+                            <div class="upload-content" id="upload-content">
+                                <p>点击上传或拖放</p>
+                                <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                <p>最大大小：20MB</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="display-result" id="load-video-container">
+                        <input type="file" class="video-test" id="videoUpload" data="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                        <label for="videoUpload">
+                            <div class="upload-content" id="upload-content">
+                                <p>点击上传或拖放</p>
+                                <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                <p>建议视时长不超过3分钟</p>
+                            </div>
+                        </label>
+                        <div class="error mt-10 mb-10" id="error"></div>
+                    </div>
+                </div>
+                <div class="img-preview display-result" id="image-before">
+                    <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" id="load-image">
+                </div>
+                <div class="img-preview display-result" id="video-before">
+                    <video>
+                        <source src="" type="video/mp4" id="load-video">
+                    </video>
+                </div>
+                <div class="response" id="responseContainer">
+                    <h3>Response:</h3>
+                    <pre id="responseText"></pre>
+                </div>
+            </div>
+        </div>
+        <div class="details-video-show theme-wd pl-15 mb-30" id="module-details">
+            <div class="demo-area pt-30 pb-65">
+                <div class="section-title">
+                    <h2>模块详情</h2>
+                    <p>路径规划导航模块采用分层架构设计，包含环境感知层、决策规划层和导航控制层。系统通过多传感器融合技术实现精确的环境感知，利用改进的A*算法和动态规划方法进行实时路径规划，并通过自适应控制算法确保导航执行的准确性。该模块具备实时性强、适应性好、可扩展性高等特点，能够有效支持智慧物流系统的高效运转。</p>
+                </div>
+                <div class="demon-info mt-35">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-lg-12" data-aos="zoom-in">
+                            <div class="demo-item">
+                                <i class="flaticon-settings-1"></i>
+                                <div class="content">
+                                    <h5>系统架构</h5>
+                                    <p>采用分层设计，实现感知、决策和控制的有机结合，确保系统运行的稳定性和可靠性。</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="flaticon-responsive"></i>
+                                <div class="content">
+                                    <h5>核心算法</h5>
+                                    <p>融合多种先进算法，包括改进A*算法、动态规划和自适应控制算法，实现高效精确的路径规划。</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="flaticon-web-design"></i>
+                                <div class="content">
+                                    <h5>功能特点</h5>
+                                    <p>具备实时性强、适应性好、可扩展性高等特点，支持多场景应用和功能扩展。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details-video-show theme-wd pl-15 mb-30" id="technology-details">
+            <div class="demo-area pt-30 pb-65">
+                <div class="section-title">
+                    <h2>技术详情</h2>
+                    <p>路径规划导航模块采用前沿技术实现环境感知、路径规划和导航指引功能。在环境感知方面，结合激光雷达、视觉传感器和深度学习算法，实现高精度的障碍物检测和环境建模。路径规划采用改进的启发式搜索算法，结合实时交通信息，动态生成最优路径。导航指引系统通过可视化技术和语音提示，为用户提供清晰直观的导航信息。</p>
+                </div>
+                <div class="demon-info mt-35">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-lg-12" data-aos="zoom-in">
+                            <div class="demo-item">
+                                <i class="flaticon-settings-1"></i>
+                                <div class="content">
+                                    <h5>环境感知技术</h5>
+                                    <p>采用多传感器融合技术，结合深度学习算法，实现高精度的环境感知和目标检测。</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="flaticon-responsive"></i>
+                                <div class="content">
+                                    <h5>路径规划算法</h5>
+                                    <p>使用改进的启发式搜索算法，结合实时路况信息，实现智能化的路径规划。</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="flaticon-web-design"></i>
+                                <div class="content">
+                                    <h5>导航指引系统</h5>
+                                    <p>通过可视化技术和语音提示，为用户提供直观清晰的导航信息。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details-video-show theme-wd pl-15 mb-30" id="future-view">
+            <div class="demo-area pt-30 pb-65">
+                <div class="section-title">
+                    <h2>未来展望</h2>
+                    <p>路径规划导航模块将持续升级优化，重点发展智能化、场景化和产业化三个方向。在智能化方面，将引入更先进的人工智能算法，提升系统的自主决策能力。在场景化方面，将扩展应用场景，支持更多类型的物流配送需求。在产业化方面，将推动技术标准化和平台化发展，促进行业生态建设。</p>
+                </div>
+                <div class="demon-info mt-35">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-lg-12" data-aos="zoom-in">
+                            <div class="demo-item">
+                                <i class="flaticon-settings-1"></i>
+                                <div class="content">
+                                    <h5>智能化升级</h5>
+                                    <p>引入先进AI算法，提升系统自主决策能力，实现更智能的路径规划和导航。</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="flaticon-responsive"></i>
+                                <div class="content">
+                                    <h5>场景化拓展</h5>
+                                    <p>扩展应用场景，支持更多类型的物流配送需求，提升系统的适应性。</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="flaticon-web-design"></i>
+                                <div class="content">
+                                    <h5>产业化发展</h5>
+                                    <p>推动技术标准化和平台化发展，促进行业生态建设，实现规模化应用。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
