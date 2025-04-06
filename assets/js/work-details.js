@@ -1,7 +1,6 @@
 /*-------------------------------------
 保证同一组选择性按钮只能选中一个
--------------------------------------
-*/
+-------------------------------------*/
 // 保证一次只选中一个项目
 $(".button-group").each(function(i, buttonGroup) {
     var $buttonGroup = $(buttonGroup);
@@ -14,8 +13,7 @@ $(".button-group").each(function(i, buttonGroup) {
 
 /*-------------------------------------
 模块展示界面切换
--------------------------------------
-*/
+-------------------------------------*/
 
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".work-details-container").forEach(container => {
@@ -50,8 +48,7 @@ document.querySelectorAll(".wdbutton").forEach(button => {
 
 /*-------------------------------------
 左侧导航栏切换
--------------------------------------
-*/
+-------------------------------------*/
 // 确保导航栏选中的
 
 document.querySelectorAll(".cbutton").forEach(button => {
@@ -78,8 +75,7 @@ document.querySelectorAll(".cbutton").forEach(button => {
 
 /*-------------------------------------
 示例视频播放
--------------------------------------
-*/
+-------------------------------------*/
 // 获取视频元素
 
 document.querySelectorAll("#display-video-play").forEach(a => {
@@ -118,8 +114,7 @@ document.querySelectorAll("#display-video").forEach(video => {
 
 /*-------------------------------------
 本地测试案例播放
--------------------------------------
-*/
+-------------------------------------*/
 // 显示内容切换
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".local-test-result").forEach(container => {
@@ -229,7 +224,7 @@ document.querySelectorAll("#start-process").forEach(button => {
     }
   })
 })
-const port = "https://2a10-2001-da8-b804-2-7860-2200-e71d-c3d5.ngrok-free.app/";
+const port = "https://80a8-2001-da8-b804-2-7860-2200-e71d-c3d5.ngrok-free.app";
 // 图片处理函数
 async function processImage(fileInput, function_name, imageDisplay, responseContainer) {
 
@@ -242,9 +237,12 @@ async function processImage(fileInput, function_name, imageDisplay, responseCont
   formData.append('image', fileInput.files[0]);
 
   try {
-      const response = await fetch(port+'/api/image/'+function_name+ '_image', {
+      const response = await fetch(port+'/api/image/'+function_name+'_image', {
           method: 'POST',
-          body: formData
+          body: formData,
+          headers: {
+            'ngrok-skip-browser-warning': 'true' // 添加跳过警告的请求头
+          }
       });
 
       if (!response.ok) {
@@ -266,59 +264,6 @@ async function processImage(fileInput, function_name, imageDisplay, responseCont
   }
 }
 // 图片处理函数带返回文本
-// async function processImageWithText(fileInput, function_name, imageDisplay, responseContainer) {
-//   if (!fileInput.files.length) {
-//       errorDiv.textContent = '请先选择图片文件';
-//       return;
-//   }
-
-//   const formData = new FormData();
-//   formData.append('image', fileInput.files[0]);
-
-//   try {
-//       const response = await fetch(port+'/api/'+function_name+ '_image', {
-//           method: 'POST',
-//           body: formData
-//       })
-//       .then(response => response.json())
-//       .then(data => {
-//         const responseText = JSON.stringify(data, null, 2); // 格式化JSON数据
-//       });
-
-//       if (!response.ok) {
-//           const error = await response.text();
-//           errorDiv.textContent = error || '图片处理失败';
-//           return;
-//       }
-
-//       // 获取图片Blob
-//       // const imageBlob = await response.blob();
-//       // const imageUrl = URL.createObjectURL(imageBlob);
-//       const responseText = await response.text();
-
-//       try {
-//         // 尝试解析响应体为JSON
-//         const jsonResponse = JSON.parse(responseText);
-//         responseContainer.textContent = jsonResponse; // 显示结果-文字
-//       } catch (parseError) {
-//         // 如果解析失败，显示原始文本
-//         responseContainer.textContent = responseText;
-//       }
-
-//       // 获取图片Blob
-//       const imageBlob = new Blob([responseText], { type: 'image/jpeg' });
-//       const imageUrl = URL.createObjectURL(imageBlob);
-
-//       // 显示结果-图片
-//       imageDisplay.style.display = 'flex';
-//       imageDisplay.src = imageUrl;
-//       // responseContainer.textContent = responseText; // 显示结果-文字
-
-//   } catch (error) {
-//       responseContainer.textContent = `请求失败: ${error.message}`;
-//   }
-// }
-
 async function processImageWithText(fileInput, function_name, imageDisplay, responseContainer) {
   if (!fileInput.files.length) {
     errorDiv.textContent = '请先选择图片文件';
@@ -332,7 +277,10 @@ async function processImageWithText(fileInput, function_name, imageDisplay, resp
   // Step 1: Upload image and get JSON response
   fetch(port+'/api/' + function_name + '_image', {
     method: 'POST',
-    body: formData
+    body: formData,
+    headers: {
+      'ngrok-skip-browser-warning': 'true' // 添加跳过警告的请求头
+    }
   })
     .then(response => response.json())
     .then(data => {
@@ -340,7 +288,11 @@ async function processImageWithText(fileInput, function_name, imageDisplay, resp
 
       const processedImageUrl = data.processedImageUrl;
       if (processedImageUrl) {
-        return fetch(port + processedImageUrl);
+        return fetch(port + processedImageUrl, {
+          headers: {
+            'ngrok-skip-browser-warning': 'true' // 添加跳过警告的请求头
+          }
+        });
       } else {
         throw new Error('Processed image URL not found in response.');
       }
@@ -376,7 +328,10 @@ async function processVideo(fileInput, function_name, responseContainer) {
   try {
       const response = await fetch(port+'/api/video/'+function_name+'_video', {
           method: 'POST',
-          body: formData
+          body: formData,
+          headers: {
+            'ngrok-skip-browser-warning': 'true' // 添加跳过警告的请求头
+          }
       });
 
       if (!response.ok) {
