@@ -241,6 +241,9 @@ async function processImage(fileInput, function_name, imageDisplay, responseCont
       const response = await fetch(port+'/api/image/'+function_name+'_image', {
           method: 'POST',
           body: formData,
+          headers: {
+            'ngrok-skip-browser-warning': 'true' // 添加跳过警告的请求头
+          }
       });
 
       if (!response.ok) {
@@ -276,6 +279,9 @@ async function processImageWithText(fileInput, function_name, imageDisplay, resp
   fetch(port+'/api/' + function_name + '_image', {
     method: 'POST',
     body: formData,
+    headers: {
+      'ngrok-skip-browser-warning': 'true' // 添加跳过警告的请求头
+    }
   })
     .then(response => response.json())
     .then(data => {
@@ -284,6 +290,9 @@ async function processImageWithText(fileInput, function_name, imageDisplay, resp
       const processedImageUrl = data.processedImageUrl;
       if (processedImageUrl) {
         return fetch(port + processedImageUrl, {
+          headers: {
+            'ngrok-skip-browser-warning': 'true' // 添加跳过警告的请求头
+          }
         });
       } else {
         throw new Error('Processed image URL not found in response.');
@@ -321,6 +330,9 @@ async function processVideo(fileInput, function_name, responseContainer) {
       const response = await fetch(port+'/api/video/'+function_name+'_video', {
           method: 'POST',
           body: formData,
+          headers: {
+            'ngrok-skip-browser-warning': 'true' // 添加跳过警告的请求头
+          }
       });
 
       if (!response.ok) {
