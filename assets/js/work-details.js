@@ -224,7 +224,8 @@ document.querySelectorAll("#start-process").forEach(button => {
     }
   })
 })
-const port = "https://80a8-2001-da8-b804-2-7860-2200-e71d-c3d5.ngrok-free.app";
+// const port = "https://80a8-2001-da8-b804-2-7860-2200-e71d-c3d5.ngrok-free.app";
+const port = "https://iy995434pc2.vicp.fun";
 // 图片处理函数
 async function processImage(fileInput, function_name, imageDisplay, responseContainer) {
 
