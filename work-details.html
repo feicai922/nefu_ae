@@ -1,4 +1,4 @@
-<!doctype html>
+port<!doctype html>
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
@@ -222,90 +222,94 @@
                         </div>
                     </div>
                 </div>
-                <div class="details-video-show theme-wd pl-15 mb-30" id="local-test">
-                    <div class="demo-area pt-30 pb-20">
-                        <div class="section-title">
-                            <h2>本地案例测试</h2>
-                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
-                        </div>
-                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
-                            <div class="video-area">
-                                <div class="video-thum ">
-                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
-                                    <div class="before-deal" id="before-deal">
-                                        <label>
-                                            <!-- todo 处理前显示的内容 -->
-                                            <img class="local-test-result result-img" id="after-deal-image" src="" alt="" >
-                                            <div class="local-test-result" id="after-deal-video">
-                                                <video id="display-video local-video-display">
-                                                    <source src="assets//video/demo.mp4" type="video/mp4">
-                                                </video>
-                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
-                                            </div>
-                                        </label>
-
-                                    </div>
-
+            <div class="details-video-show theme-wd pl-15 mb-30" id="local-test">
+                <div class="demo-area pt-30 pb-20">
+                    <div class="section-title">
+                        <h2>本地案例测试</h2>
+                        <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                    </div>
+                    <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                        <div class="video-area">
+                            <div class="video-thum">
+                                <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                <div class="before-deal" id="before-deal">
+                                    <label>
+                                        <!-- todo 处理前显示的内容 -->
+                                        <img class="local-test-result result-img" id="after-deal-image" src="" alt="">
+                                        <div class="local-test-result-div">
+                                            <video class="display-video local-video-display local-test-result" id="after-deal-video">
+                                                <source src="assets//video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <!-- <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a> -->
+                                        </div>
+                                    </label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="upload-container theme-demo">
-                        <h3>图片/视频处理</h3>
-                        <div class="upload-select-start">
-                            <select id="upload-select" class="upload-select" name="upload-select" title="upload-select", data-target="none">
-                                <option value="">请选择...</option>
-                                <option value="option1">目标检测</option>
-                                <option value="option2">目标追踪</option>
-                                <option value="option3">实例分割</option>
-                                <option value="option4">pose检测</option>
-                                <option value="option5">自主避障</option>
-                                <option value="option6">人脸识别</option>
-                                <option value="option7">货物分拣</option>
-                              </select>
-                              <button id="start-process">开始处理</button>
+                </div>
+                <div class="upload-container theme-demo">
+                    <h3>图片/视频处理</h3>
+                    <div class="upload-select-start">
+                        <select id="upload-select" class="upload-select" name="upload-select" title="upload-select" ,
+                            data-target="none">
+                            <option value="">请选择...</option>
+                            <option value="option1">目标检测</option>
+                            <option value="option2">目标追踪</option>
+                            <option value="option3">实例分割</option>
+                            <option value="option4">pose检测</option>
+                            <option value="option5">自主避障</option>
+                            <option value="option6">人脸识别</option>
+                            <option value="option7">货物分拣</option>
+                            <option value="option8">局部路径</option>
+                            <option value="option9">全局路径</option>
+                            <option value="option10">路径规划</option>
+                        </select>
+                        <button id="start-process">开始处理</button>
+                    </div>
+                    <div class="them-switch button-group mt-10 mb-15">
+                        <button class="is-checked local-load" data-target="image-test"
+                            id="local-load-image"><strong>图片处理</strong></button>
+                        <button class="local-load" data-target="video-test" id="local-load-video"><strong>视频处理</strong></button>
+                    </div>
+                    <div class="upload-box">
+                        <div class="display-result" id="load-image-container">
+                            <input type="file" class="image-test" id="imageUpload" accept=".png, .jpg, .jpeg, .webp, .pkl" />
+                            <label for="imageUpload">
+                                <div class="upload-content" id="upload-content">
+                                    <p>点击上传或拖放</p>
+                                    <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                    <p>最大大小：20MB</p>
+                                </div>
+                            </label>
                         </div>
-                        <div class="them-switch button-group mt-10 mb-15">
-                            <button class="is-checked local-load" data-target="image-test" id="local-load-image"><strong>图片处理</strong></button>
-                            <button class="local-load" data-target="video-test" id="local-load-video"><strong>视频处理</strong></button>
-                        </div>
-                        <div class="upload-box">
-                            <div class="display-result" id="load-image-container">
-                                <input type="file" class="image-test" id="imageUpload" accept=".png, .jpg, .jpeg, .webp" />
-                                <label for="imageUpload">
-                                    <div class="upload-content" id="upload-content">
-                                        <p>点击上传或拖放</p>
-                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
-                                        <p>最大大小：20MB</p>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="display-result" id="load-video-container">
-                                <input type="file" class="video-test" id="videoUpload" data="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
-                                <label for="videoUpload">
-                                    <div class="upload-content" id="upload-content">
-                                        <p>点击上传或拖放</p>
-                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
-                                        <p>建议视时长不超过3分钟</p>
-                                    </div>
-                                </label>
-                                <div class="error mt-10 mb-10" id="error"></div>
-                            </div>
-                        </div>
-                        <div class="img-preview display-result" id="image-before">
-                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" id="load-image">
-                        </div>
-                        <div class="img-preview display-result" id="video-before">
-                            <video id="load-video">
-                                <source src="" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="response" id="responseContainer">
-                            <h3>Response:</h3>
-                            <pre id="responseText"></pre>
+                        <div class="display-result" id="load-video-container">
+                            <input type="file" class="video-test" id="videoUpload" data="pose_video"
+                                accept=".mp4, .avi, .mov., WebM, .gif" />
+                            <label for="videoUpload">
+                                <div class="upload-content" id="upload-content">
+                                    <p>点击上传或拖放</p>
+                                    <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                    <p>建议视时长不超过3分钟</p>
+                                </div>
+                            </label>
+                            <div class="error mt-10 mb-10" id="error"></div>
                         </div>
                     </div>
+                    <div class="img-preview display-result" id="image-before">
+                        <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" id="load-image">
+                    </div>
+                    <div class="img-preview display-result" id="video-before">
+                        <video id="load-video">
+                            <source src="" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="response" id="responseContainer">
+                        <h3>Response:</h3>
+                        <pre id="responseText"></pre>
+                    </div>
                 </div>
+            </div>
                 <div class="details-video-show theme-wd pl-15 mb-30" id="module-details">
                     <div class="demo-area pt-30 pb-65">
                         <div class="section-title">
