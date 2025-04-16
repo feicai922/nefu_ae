@@ -177,6 +177,7 @@ document.querySelectorAll("#upload-select").forEach(select => {
       "货物分拣": "sorting",
       "局部路径": "local_path",
       "全局路径": "global_path",
+      "路径规划": "plan_path",
     };
     this.setAttribute("data-target", myDictionary[selectedOption.text]);
     console.log("选中的选项内容:", selectedOption.text);
@@ -225,15 +226,20 @@ document.querySelectorAll("#start-process").forEach(button => {
         if (function_name === "local_path" || function_name === "global_path") {
           if (function_name === "local_path") {
             imageDisplay.src = "../assets/local_path.png"; // 设置图片路径
-          }else if (function_name === "global_path") {
-            imageDisplay.src = "../assets/global_path.png"; // 设置图片路径
-          }
-          imageDisplay.style.display = "flex"; // 隐藏图片显示区域
-        }else {
+          } else if (function_name === "global_path") {
             processImage(localTest.querySelector("#imageUpload"), function_name, imageDisplay, responseContainer);
             console.log(function_name, "use processImage")
+          }
+          imageDisplay.style.display = "flex"; // 显示图片显示区域
+        }else {
+          processImage(localTest.querySelector("#imageUpload"), function_name, imageDisplay, responseContainer);
+          console.log(function_name, "use processImage")
         }
       }
+    } else if (function_name === "plan_path") {
+      // 新增的 plan_path 处理逻辑
+      processVideo_plan_path(localTest.querySelector("#videoUpload"), function_name, videoDisplay, responseContainer);
+      console.log(function_name, "use processPlanPath")
     } else {
       console.log("videoDisplay", videoDisplay)
       processVideo(localTest.querySelector("#videoUpload"), function_name, videoDisplay, responseContainer);
@@ -243,7 +249,7 @@ document.querySelectorAll("#start-process").forEach(button => {
 })
 
 // 内网穿透网址
-const port = "https://iy995434pc2.vicp.fun";
+const port = "http://127.0.0.1:8080";
 // 图片处理函数(不反回文本)
 async function processImage(fileInput, function_name, imageDisplay, responseContainer) {
   if (!fileInput.files.length) {
@@ -265,11 +271,9 @@ async function processImage(fileInput, function_name, imageDisplay, responseCont
       return;
     }
 
-    // 获取图片Blob
     const imageBlob = await response.blob();
     const imageUrl = URL.createObjectURL(imageBlob);
 
-    // 显示结果-图片
     imageDisplay.src = imageUrl;
     imageDisplay.style.display = 'flex';
 
@@ -288,7 +292,6 @@ async function processImageWithText(fileInput, function_name, imageDisplay, resp
   const formData = new FormData();
   formData.append('image', file);
 
-  // Step 1: Upload image and get JSON response
   fetch(port + '/api/' + function_name + '_image', {
     method: 'POST',
     body: formData
@@ -318,7 +321,7 @@ async function processImageWithText(fileInput, function_name, imageDisplay, resp
       responseContainer.textContent = 'An error occurred: ' + error.message;
     });
 }
-
+// 视频处理函数
 async function processVideo(fileInput, function_name, videoDisplay, responseContainer) {
   if (!fileInput.files.length) {
     responseContainer.textContent = '请先选择视频文件';
@@ -335,6 +338,74 @@ async function processVideo(fileInput, function_name, videoDisplay, responseCont
 
   try {
     const response = await fetch(port + '/api/video/' + function_name + '_video', {
+      method: 'POST',
+      body: formData
+    });
+
+    if (!response.ok) {
+      const error = await response.text();
+      responseContainer.textContent = error || '视频处理失败';
+      return;
+    }
+
+    console.log(response.status); // 打印响应状态码
+    console.log(response.statusText); // 打印响应状态文本
+
+    const videoBlob = await response.blob();
+    console.log(videoBlob.type); // 检查返回的 MIME 类型
+    console.log(videoBlob.size); // 检查返回的文件大小
+
+    if (!videoBlob.type.startsWith('video/')) {
+      responseContainer.textContent = '返回的内容不是视频文件';
+      return;
+    }
+
+    if (videoBlob.size === 0) {
+      responseContainer.textContent = '返回的视频文件为空';
+      return;
+    }
+
+    const videoUrl = URL.createObjectURL(videoBlob);
+    console.log(videoUrl); // 打印生成的 URL
+
+    // 清除 <video> 元素中的所有子元素
+    while (videoDisplay.firstChild) {
+      videoDisplay.removeChild(videoDisplay.firstChild);
+    }
+
+    // 设置新的视频源
+    videoDisplay.src = videoUrl;
+    videoDisplay.style.display = 'block';
+
+    videoDisplay.addEventListener('loadedmetadata', () => {
+      console.log('视频元数据加载完成');
+    });
+
+    videoDisplay.addEventListener('canplay', () => {
+      console.log('视频可以播放');
+      videoDisplay.play(); // 自动播放视频
+    });
+  } catch (error) {
+    responseContainer.textContent = `请求失败: ${error.message}`;
+  }
+}
+// 路径规划处理函数
+async function processVideo_plan_path(fileInput, function_name, videoDisplay, responseContainer) {
+  if (!fileInput.files.length) {
+    responseContainer.textContent = '请先选择视频文件';
+    return;
+  }
+
+  if (!videoDisplay) {
+    responseContainer.textContent = '视频播放器未正确初始化';
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append('video', fileInput.files[0]);
+
+  try {
+    const response = await fetch(port + '/api/plan-path/' + function_name + '_video', {
       method: 'POST',
       body: formData
     });
