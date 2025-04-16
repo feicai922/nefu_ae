@@ -261,8 +261,8 @@ document.querySelectorAll("#start-process").forEach(button => {
 
 // 内网穿透网址
 <<<<<<< HEAD
-const port = "http://127.0.0.1:8080";
-// const port = "https://iy995434pc2.vicp.fun";
+// const port = "http://127.0.0.1:8080";
+const port = "https://iy995434pc2.vicp.fun";
 =======
 // const port = "http://127.0.0.1:8080";
 const port = "https://iy995434pc2.vicp.fun";
