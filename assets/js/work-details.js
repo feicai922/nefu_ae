@@ -215,7 +215,10 @@ document.querySelectorAll("#start-process").forEach(button => {
     const loadButton = localTest.querySelector("#local-load-image") // 获取当前显示的模块的loadButton
     const imageDisplay = localTest.querySelector("#after-deal-image") // 获取当前显示体图片的容器
     const videoDisplay = localTest.querySelector("#after-deal-video") // 获取当前显示体视频的容器
+<<<<<<< HEAD
     const imageBefore = localTest.querySelector("#load-image")
+=======
+>>>>>>> 1c2e5dc77491965b7c56b74cb57a1704c93cf931
     const responseContainer = localTest.querySelector("#responseText") // 获取当前显示文本的容器
     const uploadSelect = localTest.querySelector("#upload-select") // 获取功能选择下拉框
     const function_name = uploadSelect.getAttribute("data-target") // 获取当前选择的功能
@@ -226,10 +229,15 @@ document.querySelectorAll("#start-process").forEach(button => {
       } else {
         if (function_name === "local_path" || function_name === "global_path") {
           if (function_name === "local_path") {
+<<<<<<< HEAD
             imageBefore.src = "../assets/image.png";
             imageDisplay.src = "../assets/local_path.png"; // 设置图片路径
           } else if (function_name === "global_path") {
             imageBefore.src = "../assets/image.png";
+=======
+            imageDisplay.src = "../assets/local_path.png"; // 设置图片路径
+          } else if (function_name === "global_path") {
+>>>>>>> 1c2e5dc77491965b7c56b74cb57a1704c93cf931
             processImage(localTest.querySelector("#imageUpload"), function_name, imageDisplay, responseContainer);
             console.log(function_name, "use processImage")
           }
@@ -252,8 +260,13 @@ document.querySelectorAll("#start-process").forEach(button => {
 })
 
 // 内网穿透网址
+<<<<<<< HEAD
 const port = "http://127.0.0.1:8080";
 // const port = "https://iy995434pc2.vicp.fun";
+=======
+// const port = "http://127.0.0.1:8080";
+const port = "https://iy995434pc2.vicp.fun";
+>>>>>>> 1c2e5dc77491965b7c56b74cb57a1704c93cf931
 // 图片处理函数(不反回文本)
 async function processImage(fileInput, function_name, imageDisplay, responseContainer) {
   if (!fileInput.files.length) {
@@ -391,6 +404,77 @@ async function processVideo(fileInput, function_name, videoDisplay, responseCont
     });
   } catch (error) {
     responseContainer.textContent = `请求失败: ${error.message}`;
+<<<<<<< HEAD
+=======
+  }
+}
+// 路径规划处理函数
+async function processVideo_plan_path(fileInput, function_name, videoDisplay, responseContainer) {
+  if (!fileInput.files.length) {
+    responseContainer.textContent = '请先选择视频文件';
+    return;
+  }
+
+  if (!videoDisplay) {
+    responseContainer.textContent = '视频播放器未正确初始化';
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append('video', fileInput.files[0]);
+
+  try {
+    const response = await fetch(port + '/api/plan-path/' + function_name + '_video', {
+      method: 'POST',
+      body: formData
+    });
+
+    if (!response.ok) {
+      const error = await response.text();
+      responseContainer.textContent = error || '视频处理失败';
+      return;
+    }
+
+    console.log(response.status); // 打印响应状态码
+    console.log(response.statusText); // 打印响应状态文本
+
+    const videoBlob = await response.blob();
+    console.log(videoBlob.type); // 检查返回的 MIME 类型
+    console.log(videoBlob.size); // 检查返回的文件大小
+
+    if (!videoBlob.type.startsWith('video/')) {
+      responseContainer.textContent = '返回的内容不是视频文件';
+      return;
+    }
+
+    if (videoBlob.size === 0) {
+      responseContainer.textContent = '返回的视频文件为空';
+      return;
+    }
+
+    const videoUrl = URL.createObjectURL(videoBlob);
+    console.log(videoUrl); // 打印生成的 URL
+
+    // 清除 <video> 元素中的所有子元素
+    while (videoDisplay.firstChild) {
+      videoDisplay.removeChild(videoDisplay.firstChild);
+    }
+
+    // 设置新的视频源
+    videoDisplay.src = videoUrl;
+    videoDisplay.style.display = 'block';
+
+    videoDisplay.addEventListener('loadedmetadata', () => {
+      console.log('视频元数据加载完成');
+    });
+
+    videoDisplay.addEventListener('canplay', () => {
+      console.log('视频可以播放');
+      videoDisplay.play(); // 自动播放视频
+    });
+  } catch (error) {
+    responseContainer.textContent = `请求失败: ${error.message}`;
+>>>>>>> 1c2e5dc77491965b7c56b74cb57a1704c93cf931
   }
 }
 // 路径规划处理函数
