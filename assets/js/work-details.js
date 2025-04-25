@@ -272,7 +272,7 @@ document.querySelectorAll(".start-process").forEach((button) => {
 });
 
 // 内网穿透网址
-const port = "http://nefu.free.idcfengye.com";
+const port = "https://iy995434pc2.vicp.fun";
 // const port = "http://127.0.0.1:8080";
 // 图片处理函数(不反回文本)
 async function processImage(
