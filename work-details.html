@@ -1,0 +1,2270 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>LogiX WorkDetails</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/flat-icon/flaticon.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/work-details.css">
+</head>
+<body>
+    <!-- preloader  -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- ============= header-area-start ==================== -->
+    <header class="header-transfrent">
+        <div class="header-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="logo-area">
+                            <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li><a href="index.html">首页</a></li>
+                                    <li><a href="service.html">产品</a></li>
+                                    <li><a href="#">项目 <i class="flaticon-down-arrow"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="work.html">具体项目</a></li>
+                                            <li><a href="work-details.html">技术细节</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog-sidebar.html">社区</a></li>
+                                    <li><a href="about.html">关于我们</a></li>
+                                    <li><a href="contact.html">联系我们</a></li>
+                                    <li><a href="faq.html">Faq's</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="mobile-menu"></div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                        <div class="header-action-button f-right">
+                            <a href="#signinModal" data-toggle="modal" class="btn header-btn login active-btn">登入</a>
+                            <a href="#signupModal" data-toggle="modal" class="btn header-btn">注册</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ============= header-area-end ====================== -->
+
+    <!-- ========== breadcrumbs-area-start ================ -->
+    <div class="breadcrumbs-area text-center">
+        <div class="breadcrumbs-wrapper pt-110 pb-110">
+            <div class="mk-page-title">
+                <h2>各模块技术详细</h2>
+            </div>
+            <nav class="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">首页</a> <i class="flaticon-right-arrow-angle"></i></li>
+                <li class="breadcrumb-item active" aria-current="page">各模块技术详细</li>
+              </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- =========== breadcrumbs-area-end ================= -->
+
+    <!-- =============== button-choose-area-start ============ -->
+    <div class="button-choose-area mt-75 mb-30">
+        <div class="button-choose-container">
+            <div class="section-title mb-30">
+                <h2 data-aos="zoom-in">技术模块</h2>
+                <p data-aos="zoom-in">智慧物流系统的核心模块介绍</p>
+            </div>
+            <div class="item-menu button-group mb-20 text-center">
+                <button class="active is-checked" data-filter="*">All</button>
+                <button data-filter=".item-1"><strong>无人机</strong></button>
+                <button data-filter=".item-2"><strong>无人车</strong></button>
+                <button data-filter=".item-3"><strong>集成终端</strong></button>
+                <button data-filter=".item-5"><strong>中转平台</strong></button>
+            </div>
+            <div class="rbutton-container button-group item-active text-center">
+                <div class="grid-item item-1 item-2">
+                    <button class="wdbutton is-checked" data-target="load"><strong>路径规划与导航</strong></button>
+                </div>
+                <div class="grid-item item-1 item-2">
+                    <button class="wdbutton" data-target="cargo"><strong>货物分辨与装载</strong></button>
+                </div>
+                <div class="grid-item item-1">
+                    <button class="wdbutton" data-target="auto-cruising"><strong>自主引导巡航</strong></button>
+                </div>
+                <div class="grid-item item-1">
+                    <button class="wdbutton" data-target="delivery"><strong>定点智能配送</strong></button>
+                </div>
+                <div class="grid-item item-1 item-2">
+                    <button class="wdbutton" data-target="auto-avoidance"><strong>自主避让与应急处理</strong></button>
+                </div>
+                <div class="grid-item item-1 item-2">
+                    <button class="wdbutton" data-target="follow"><strong>智能跟随</strong></button>
+                </div>
+                <div class="grid-item item-1">
+                    <button class="wdbutton" data-target="rising"><strong>自助起飞与降落</strong></button>
+                </div>
+                <div class="grid-item item-5">
+                    <button class="wdbutton" data-target="VirtualSimulation"><strong>虚拟仿真</strong></button>
+                </div> 
+                <div class="grid-item item-2">
+                    <button class="wdbutton" data-target="collaboration"><strong>多车协作调度</strong></button>
+                </div>
+                <div class="grid-item item-3">
+                    <button class="wdbutton" data-target="scheduling"><strong>智能设备算法调度</strong></button>
+                </div>
+                <div class="grid-item item-3">
+                    <button class="wdbutton" data-target="data-deal"><strong>信息采集与处理</strong></button>
+                </div>
+                <div class="grid-item item-1">
+                    <button class="wdbutton" data-target="data-transmission"><strong>数据收集与传输</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============== button-choose-area-end ============== -->
+
+    <!-- ============ details-are-start =================== -->
+    <div class="work-details mb-65">
+        <div class="cbutton-list button-group text-center pl-70 pr-15">
+            <div class="grid-item">
+                <button class="cbutton is-checked" data-target="video-display"><strong>展示视频</strong></button>
+            </div>
+            <div class="grid-item">
+                <button class="cbutton" data-target="local-test"><strong>本地测试</strong></button>
+            </div>
+            <div class="grid-item">
+                <button class="cbutton" data-target="module-details"><strong>模块详情</strong></button>
+            </div>
+            <div class="grid-item">
+                <button class="cbutton" data-target="technology-details"><strong>技术详情</strong></button>
+            </div>
+            <div class="grid-item">
+                <button class="cbutton" data-target="future-view"><strong>未来展望</strong></button>
+            </div>
+        </div>
+        <div class="work-details-container show" id="load">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30" id="video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>路径规划导航</h2>
+                            <p>在智慧物流系统中，无人机和无人车的路径规划导航模块是高效物流的关键。
+                                该模块结合传感器数据和AI视觉算法，通过智能算法，为无人设备实时规划最优路径。
+                                它支持动态避障和多智能体协同，可应对复杂环境和突发状况，确保配送安全高效。这一模块不仅优化配送时间，还降低运营成本，
+                                为智慧物流提供强大支持。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>环境感知</h5>
+                                            <p>实时检测路径中的行人、车辆、障碍物等目标物体，并为后续路径规划提供详细数据。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>路径规划</h5>
+                                            <p>动态调整路径规划策略，确保目标对象能够以最短时间、最高效率抵达目的地。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>导航指引</h5>
+                                            <p>将规划好的路径以直观的方式呈现给使用者，
+                                                通过可视化界面进行实时导航指引。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/multi_route_animation_1.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30" id="local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地测试</h2>
+                            <p>你可以在本地测试系统的功能模块，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result" id="after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video" id="after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>配置模拟数据</h3>
+                        <div class="path-planning-parameter">
+                            <label for="end-node-nums">需要运送的货物数量：
+                                <input type="number" id="end-node-nums" name="end-node-nums" min="1" max="100" step="1" value="1">
+                            </label>
+                            <label for="ugv-max-weight">无人车最大配送重量：
+                                <input type="number" id="ugv-max-weight" name="ugv-max-weight" min="1" max="100" step="1" value="1">
+                            </label>
+                            <label for="ugv-max-volume">无人车最大配送体积：
+                                <input type="number" id="ugv-max-volume" name="ugv-max-volume" min="1" max="100" step="1" value="1">
+                            </label>
+                            <label for="ugv-speed">无人车平均行驶速度：
+                                <input type="number" id="ugv-speed" name="ugv-speed" min="1" max="100" step="1" value="1">
+                            </label>
+                        </div>
+                        <button class="start-process">开始处理</button>
+                        <div class="response" id="responseContainer">
+                            <h3>Response:</h3>
+                            <pre id="responseText">请配置路径规划的相关参数。</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30" id="module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>路径规划与导航模块</h2>
+                            <p>路径规划与导航模块作为智慧物流系统的关键枢纽，借助前沿算法与传感器数据，实时规划最优路径。
+                                它不仅具备动态避障能力，还支持多智能体协同作业，保障无人机和无人车在复杂环境下安全、高效地执行任务。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30" id="technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>路径规划与导航技术</h2>
+                            <p>该模块融合深度学习与计算机视觉技术，结合实时传感器数据，快速剖析环境信息并生成最优路径。
+                                智能算法的运用，使系统能够动态调整路径规划策略，助力目标对象以最短时间、最高效率抵达目的地。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30" id="future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>路径规划与导航未来展望</h2>
+                            <p>展望未来，路径规划与导航模块将整合实时数据分析、云计算等智能技术，进一步提升智能化水平。
+                                这有望实现更高效的物流配送，降低运营成本，增强系统的适应性与灵活性。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="cargo">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>货物分辨与装载</h2>
+                            <p>智慧物流系统中的货物分辨与装载模块利用先进的计算机视觉和深度学习技术，实现对不同类型、形状和尺寸货物的精准识别和分类。
+                                系统能够自动计算最佳装载方案，优化空间利用率，同时确保货物安全稳固。
+                                该模块支持多种传感器融合，可在各种光线条件下工作，大幅提高物流效率和准确性，减少人工干预和错误率。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>智能识别系统</h5>
+                                            <p>采用深度学习算法，能够精准识别各类货物的形状、尺寸和特性，支持条形码、二维码和RFID等多种标识方式。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>优化装载算法</h5>
+                                            <p>基于3D空间规划的智能装载算法，可根据货物特性和运输工具空间，计算最佳装载方案，提高空间利用率。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>实时监控系统</h5>
+                                            <p>全程监控货物状态，确保装载过程安全可靠，并能够实时调整装载策略，应对突发情况。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                              </select>
+                              <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="cargoImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="cargoImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="cargoVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="cargoVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>货物分辨与装载模块</h2>
+                            <p>货物分辨与装载模块通过深度学习技术，实现对不同类型货物的精准识别和分类，优化装载方案，提高空间利用率。该模块能够自动计算最佳装载方案，确保货物安全稳固，广泛应用于物流配送。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>货物分辨与装载技术</h2>
+                            <p>此模块采用深度学习算法，精准识别各类货物的形状、尺寸和特性，支持条形码、二维码、RFID等多种标识方式。
+                                基于3D空间规划的智能装载算法，根据货物特性和运输工具空间，计算出最佳装载方案。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>货物分辨与装载未来展望</h2>
+                            <p>未来，货物分辨与装载模块将融合更多传感器数据，提升货物识别的准确性和装载效率。
+                                预计会产生更高效的装载方案，减少人工干预，推动智能物流发展。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="auto-cruising">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>自主引导巡航</h2>
+                            <p>自主引导巡航系统专注于依据预先规划的路径实现自动化移动。它综合运用先进的传感器技术、智能算法以及精准的定位系统，对规划路径进行实时解析与监控。
+                                无论是在复杂的室内环境，还是在多变的户外场景，系统都能精确遵循规划路径，灵活应对各种突发状况，确保巡航过程的稳定与高效，
+                                为用户提供便捷、可靠的自主移动服务。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>路径解析</h5>
+                                            <p>能够快速且精准地读取规划路径的各项数据信息，为巡航设备提供清晰明确的移动指令指引。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>动态调整</h5>
+                                            <p>基于实时数据重新评估并调整当前巡航路径，使设备能够及时避开危险，始终沿着最优路线移动。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>精准执行</h5>
+                                            <p>根据路径解析模块和动态调整模块发出的指令，精确控制巡航设备的动力系统和转向系统。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="auto-cruisingImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="auto-cruisingImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="auto-cruisingVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="auto-cruisingVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>自主引导巡航模块</h2>
+                            <p>自主引导巡航模块专注于依据预设路径实现自动化移动。它综合运用先进传感器技术、智能算法和精准定位系统，
+                                实时解析和监控规划路径，确保设备在复杂环境下安全高效作业。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>自主引导巡航技术</h2>
+                            <p>该模块能够快速、精准读取规划路径数据，为巡航设备提供明确移动指令。
+                                基于实时数据，系统动态调整巡航路径，使设备及时避开危险，始终沿最优路线行进。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>自主引导巡航未来展望</h2>
+                            <p>未来，自主引导巡航模块将引入更多智能算法，提升无人机和无人车在复杂环境中的自主导航能力。
+                                预计可实现更高效的路径规划和动态调整，增强系统的灵活性与适应性。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="rising">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-3 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>自主起飞与降落</h2>
+                            <p>自主起飞与降落系统专为飞行器设计，运用先进的传感器融合、视觉识别以及智能控制技术，实现飞行器从地面平稳起飞，
+                                依照预设任务执行飞行操作，并在任务完成后精准降落。该系统能够自动适应不同的环境条件，
+                                如风向、光照等，大幅提升起飞与降落过程的安全性和可靠性，减少人工干预，广泛适用于无人机、无人直升机等多种飞行器。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>起飞准备与监测</h5>
+                                            <p>起飞前，通过各类传感器全方位检测飞行器的状态和周围环境参数。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>自主导航与姿态控制</h5>
+                                            <p>依据预设航线和实时环境信息，结合 GPS、惯性导航等技术，精确控制飞行器的飞行方向、高度和速度。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>降落识别与执行</h5>
+                                            <p>根据与降落点的相对位置和姿态，智能调整飞行器的下降速度和角度。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="risingImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="risingImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="risingVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="risingVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>自主起飞与降落模块</h2>
+                            <p>自主起飞与降落模块专为飞行器设计，运用先进的传感器融合、视觉识别和智能控制技术，
+                                实现飞行器平稳起飞和精准降落。该系统能自动适应不同环境条件，提升起飞降落的安全性与可靠性。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>自主起飞与降落技术</h2>
+                            <p>模块依据预设航线和实时环境信息，结合GPS、惯性导航等技术，精确控制飞行器的飞行方向、高度和速度。
+                                智能算法实时监测飞行器状态，保障起飞降落过程安全。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>自主起飞与降落未来展望</h2>
+                            <p>未来，该模块将整合更多智能技术，提升起飞降落的智能化水平，助力更高效的物流配送。
+                                预计会引入更多实时数据分析，确保起飞降落的准确性和灵活性。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="delivery">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>定点智能配送</h2>
+                            <p>定点智能配送系统是一套高度自动化与智能化的配送解决方案。它综合运用先进的定位技术、智能算法以及高效的运动控制机制，
+                                能够准确地将货物从起始点配送至指定的目标地点。系统可适应多种复杂的配送环境，无论是城市街道、工业园区还是校园等场景，
+                                都能精准规划配送路径，高效避开各类障碍，实现安全、快捷、稳定的定点配送服务，有效提升配送效率，降低人力成本。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>订单与目的地解析</h5>
+                                            <p>通过与地图数据和定位系统的深度融合，将目的地信息转化为精确的地理坐标，并对配送路径进行初步规划分析。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>智能路径规划</h5>
+                                            <p>动态调整路径规划策略，实时避开拥堵路段和障碍物。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>精准配送与人脸识别</h5>
+                                            <p>精确确定目标配送位置，并将现场采集到的收货人的人脸图像与预先存储的人脸信息进行比对。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="deliveryImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="deliveryImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="deliveryVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="deliveryVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>定点智能配送模块</h2>
+                            <p>定定点智能配送模块是高度自动化、智能化的配送方案。
+                                它综合运用先进定位技术、智能算法和高效运动控制机制，准确将货物从起点配送至指定目的地。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>定点智能配送技术</h2>
+                            <p>该模块深度融合地图数据和定位系统，将目的地信息转化为精确地理坐标，初步规划配送路径。
+                                系统动态调整路径规划策略，实时避开拥堵路段和障碍物，确保配送高效。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>定点智能配送未来展望</h2>
+                            <p>未来，定点智能配送模块将结合更多智能技术，提升配送的准确性和效率。
+                                预计会产生更高效的配送方案，降低人力成本，推动智能物流发展。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="data-transmission">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>数据收集与传输</h2>
+                            <p>数据收集与传输系统是实现信息高效流转与整合的关键平台。它综合运用多种先进的传感器技术、通信技术和数据处理算法，
+                                能够从多样化的数据源中快速、准确地采集各类数据信息，如环境参数、设备状态、人员行为数据等。所采集的数据经过高效处理后，
+                                通过稳定可靠的传输通道，安全、及时地传输至指定的存储或分析平台，为后续的数据挖掘、决策支持等应用提供坚实的数据基础，广泛适用于工业生产、智能交通、医疗健康等多个领域。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>多源数据采集</h5>
+                                            <p>配备丰富多样的传感器设备，能够针对不同类型的数据进行实时采集。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>数据预处理</h5>
+                                            <p>对采集到的数据进行深度清洗和预处理工作，易于后续分析处理。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>安全可靠传输</h5>
+                                            <p>采用先进的通信协议和加密技术，建立稳定的传输通道，实现数据从采集端到接收端的高效流转。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="data-transmissionImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="data-transmissionImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="data-transmissionVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="data-transmissionVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>数据收集与传输模块</h2>
+                            <p>数据收集与传输模块是实现信息高效流转与整合的关键平台。
+                                它综合运用多种先进传感器技术、通信技术和数据处理算法，快速、准确地从多样化数据源采集各类数据。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>数据收集与传输技术</h2>
+                            <p>该模块配备丰富的传感器设备，实时采集不同类型数据，并对采集数据进行深度清洗和预处理，确保数据的准确性和可靠性。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>数据收集与传输未来展望</h2>
+                            <p>未来，数据收集与传输模块将引入更多智能算法，提升数据处理的效率和准确性。
+                                预计会实现更高效的数据流转和整合，为各行业智能化发展提供有力支持。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="follow">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>智能跟随</h2>
+                            <p>智能跟随系统是一款基于先进的感知与控制技术，能够实现设备自动跟随目标对象移动的智能化解决方案。
+                                它融合了计算机视觉、传感器融合以及智能算法等技术，可精准识别和追踪目标，实时调整自身的位置和移动速度，无论在室内外的复杂环境中，还是在人群密集、障碍物众多的场景下，
+                                都能始终保持与目标的安全距离并跟随移动，为用户提供便捷、贴心的服务，广泛应用于物流搬运、个人出行辅助等多个领域。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>目标识别</h5>
+                                            <p>对摄像头捕获的图像或视频流进行实时分析处理，以极高的效率和准确率完成目标检测任务。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>环境感知与定位</h5>
+                                            <p>将感知到的环境数据与目标识别模块的信息进行融合，为系统的路径规划和安全控制提供全面、准确的数据支持。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>智能跟随控制</h5>
+                                            <p>根据目标识别模块和环境感知与定位模块提供的信息，实时计算并调整移动方向和速度。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="followImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="followImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="followVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="followVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>智能跟随模块</h2>
+                            <p>智能跟随模块基于先进的感知与控制技术，实现设备自动跟随目标对象移动。
+                                它融合计算机视觉、传感器融合和智能算法等技术，确保设备精准识别和追踪目标。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>智能跟随技术</h2>
+                            <p>模块通过实时分析摄像头捕获的图像或视频流，高效完成目标检测任务。
+                                融合感知到的环境数据和目标识别信息，为路径规划和安全控制提供全面数据支持。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>智能跟随未来展望</h2>
+                            <p>未来，智能跟随模块将结合更多智能算法，提升设备在复杂环境中的跟随能力。
+                                预计会实现更高效的目标识别和跟随控制，为用户提供更便捷的服务。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="auto-avoidance">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>自主避让与应急处理</h2>
+                            <p>自主避让与应急处理系统是一款高度智能化且性能卓越的安全保障方案，特别融入了先进的 yolo detection 技术。
+                                借助 yolo detection 强大的目标检测能力，结合多种高精度传感器，该系统能够对周围环境进行全方位、实时的监测。
+                                无论是复杂场景中的各类障碍物，还是突发的异常目标，都能迅速精准地识别。一旦检测到潜在危险或异常情况，系统不仅可以智能规划避让路径，还能及时启动相应的应急处理机制，
+                                确保设备及人员在各种复杂情况下的安全，广泛适用于智能交通、工业自动化等多个领域。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>环境感知</h5>
+                                            <p>对摄像头所捕获的图像或视频流进行实时分析，能够快速且准确地检测出环境中的各类目标物体。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>智能避让决策</h5>
+                                            <p>通过对多种可能的避让路径进行评估和比较，选择最安全、最合理的路径，有效避免碰撞。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>应急处理执行</h5>
+                                            <p>检测到设备关键部件出现故障时，自动触发紧急制动程序，并与远程控制中心进行实时通信。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="auto-avoidanceImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="auto-avoidanceImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="auto-avoidanceVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="auto-avoidanceVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>自主避让与应急处理模块</h2>
+                            <p>自主避让与应急处理模块是高度智能化的安全保障方案，全方位、实时监测周围环境。
+                                它结合先进的目标检测技术，保障设备在复杂环境中的安全。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>自主避让与应急处理技术</h2>
+                            <p>模块实时分析摄像头捕获的图像，快速准确检测环境中的各类目标物体。
+                                智能规划避让路径，在检测到潜在危险时，及时启动应急处理机制。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>自主避让与应急处理未来展望</h2>
+                            <p>未来，该模块将引入更多智能决策机制，提升设备在复杂环境中的安全性和应急处理能力。
+                                预计会实现更高效的避让策略和应急响应，保障设备和人员安全。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="collaboration">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>多车协作调度</h2>
+                            <p>多车协作调度系统是一套先进的智能化管理解决方案，专门针对多车辆协同作业的场景而设计。该系统综合运用物联网、大数据、智能算法等技术，
+                                实现对多辆车的统一管理与协调调度。通过实时获取车辆的位置、状态、任务信息等数据，系统能够根据不同的任务需求和环境状况，
+                                智能地分配任务、规划路径，并协调车辆之间的协作，从而提高整体作业效率，降低运营成本，广泛适用于物流配送等多车协同作业的领域。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>车辆状态与信息采集</h5>
+                                            <p>实时采集每辆车的位信息，同时收集车辆的任务执行进度、剩余续航里程等数据。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>智能任务分配与路径规划</h5>
+                                            <p>根据车辆状态与信息采集模块提供的数据，为每辆车选择最合适的任务，并规划最优的行驶路径。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>多车协作协调</h5>
+                                            <p>通过实时通信和信息共享，确保车辆之间能够相互配合，避免冲突和碰撞。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="collaborationImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="collaborationImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="collaborationVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="collaborationVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>多车协作调度模块</h2>
+                            <p>多车协作调度模块是针对多车辆协同作业场景的先进智能化管理方案。
+                                它实现对多辆车的统一管理和协调调度，提高整体作业效率。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>多车协作调度技术</h2>
+                            <p>该模块实时采集每辆车的位置、状态、任务信息等数据，根据任务需求和环境状况，
+                                智能分配任务、规划路径。通过实时通信和信息共享，确保车辆间相互配合，避免冲突和碰撞。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>多车协作调度未来展望</h2>
+                            <p>未来，多车协作调度模块将结合更多智能算法，提升任务分配和路径规划的效率。
+                                预计会实现更高效的协作调度，降低运营成本，推动智能物流发展。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="scheduling">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>智能设备算法调度</h2>
+                            <p>智能设备算法调度系统是一套高度集成化、智能化的管理体系，旨在优化各类智能设备的运行效率与资源利用。
+                                它综合运用先进的算法模型、数据分析以及物联网技术，实时监测智能设备的状态、性能参数和任务需求等信息。
+                                基于这些数据，系统能够智能地制定调度策略，合理分配设备任务，调整设备运行参数，实现设备之间的协同工作，
+                                提高整体系统的响应速度和处理能力。该系统广泛适用于工业自动化、智能建筑、智能交通等多个领域，为智能设备的高效运行提供了有力保障。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>设备状态监测</h5>
+                                            <p>实时收集设备的运行数据，将这些数据进行整理和分析后，及时反馈给调度系统。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>智能算法调度</h5>
+                                            <p>根据不同的任务需求和设备特点，为每个设备选择最合适的任务，并确定最佳的运行参数设置。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>设备协同管理</h5>
+                                            <p>通过建立设备之间的通信和信息共享机制，确保设备之间能够及时传递任务信息、状态信息和控制指令。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/ControlCenter.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="schedulingImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="schedulingImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="schedulingVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="schedulingVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>智能设备算法调度模块</h2>
+                            <p>智能设备算法调度模块是高度集成化、智能化的管理体系，旨在优化各类智能设备的运行效率和资源利用。
+                                它实时监测智能设备的状态、性能参数和任务需求。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>智能设备算法调度技术</h2>
+                            <p>模块根据任务需求和设备特点，为每个设备选择最合适的任务，并确定最佳运行参数设置。
+                                建立设备间的通信和信息共享机制，确保设备及时传递任务信息和控制指令。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>智能设备算法调度未来展望</h2>
+                            <p>未来，智能设备算法调度模块将借助大数据分析，进一步优化设备调度策略，提高资源利用率。
+                                预计会实现更高效的任务分配和调度管理，推动智能设备高效运行。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="data-deal">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>信息采集与处理</h2>
+                            <p>信息采集与处理系统是一个能够高效获取、整合并深度分析各类信息的综合性平台。它运用多种先进的采集技术和智能处理算法，
+                                从多样化的数据源，如传感器网络、互联网平台、数据库等，快速且准确地收集信息。采集到的信息涵盖了文本、图像、音频、视频等多种形式。
+                                随后，通过强大的数据清洗、分类、挖掘等处理手段，将原始信息转化为有价值的知识和决策依据，广泛应用于商业决策、科学研究、安全监控等多个领域，为各行业的智能化发展提供有力支持。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>多源信息采集</h5>
+                                            <p>支持多种数据格式的采集，并对采集到的数据进行初步的格式转换和规范化处理。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>信息预处理</h5>
+                                            <p>对采集到的原始信息进行深度预处理操作，对数据进行压缩和加密处理。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>智能分析与挖掘</h5>
+                                            <p>对预处理后的信息进行深入分析和挖掘，帮助用户更好地理解数据背，做出科学合理的决策。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="data-dealImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="data-dealImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="data-dealVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="data-dealVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>信息采集与处理模块</h2>
+                            <p>信息采集与处理模块是高效获取、整合并深度分析各类信息的综合性平台。
+                                它运用多种先进采集技术和智能处理算法，快速准确收集信息。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>信息采集与处理技术</h2>
+                            <p>该模块支持多种数据格式采集，对采集数据进行初步格式转换和规范化处理。
+                                通过数据清洗、分类、挖掘等手段，将原始信息转化为有价值的知识和决策依据。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>信息采集与处理未来展望</h2>
+                            <p>未来，信息采集与处理模块将引入更多智能算法，提升信息处理的效率和准确性。
+                                预计会实现更高效的信息流转和整合，为各行业智能化发展提供有力支持。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-details-container" id="transshipment">
+            <div class="container">
+                <div class="details-video-show theme-wd pl-15 mb-30 video-display">
+                    <div class="demo-area pt-30 pb-30">
+                        <div class="section-title">
+                            <h2>货物寄存智能续航</h2>
+                            <p>货物寄存智能续航系统是专为货物寄存场景打造的智能化解决方案。它结合先进的智能感知技术、能源管理算法以及自动化控制手段，
+                                实现对货物寄存设备的高效管理和能源的智能调配。系统能够实时监测货物寄存设备的运行状态、能源消耗情况以及寄存货物的相关信息。
+                                在保障货物安全存储的同时，通过智能续航策略，优化设备的能源使用，延长设备的续航时间，降低运营成本，提升货物寄存服务的质量和效率，适用于商场、车站、机场等各类货物寄存场所。</p>
+                        </div>
+                        <div class="demon-info mt-35">
+                            <div class="row align-items-center">
+                                <div class="col-xl-5 col-lg-5" data-aos="zoom-in">
+                                    <div class="demo-item">
+                                        <i class="flaticon-settings-1"></i>
+                                        <div class="content">
+                                            <h5>设备状态与能源监测</h5>
+                                            <p>实时采集设备的运行状态信息，监测设备的能源消耗情况。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-responsive"></i>
+                                        <div class="content">
+                                            <h5>智能续航策略</h5>
+                                            <p>运用智能算法制定合理的续航策略，提前规划设备的充电或更换电池时间。</p>
+                                        </div>
+                                    </div>
+                                    <div class="demo-item">
+                                        <i class="flaticon-web-design"></i>
+                                        <div class="content">
+                                            <h5>货物信息管理与安全保障</h5>
+                                            <p>通过二维码扫描和人脸识别等智能识别技术，确保取货人身份的准确性，保障货物的安全。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 col-lg-7 pl-30">
+                                    <div class="video-area">
+                                        <div class="video-thum">
+                                            <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                            <video class="display-video">
+                                                <source src="assets/video/demo.mp4" type="video/mp4">
+                                            </video>
+                                            <a id="display-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 local-test">
+                    <div class="demo-area pt-30 pb-20">
+                        <div class="section-title">
+                            <h2>本地案例测试</h2>
+                            <p>你可以提交本地的测试数据，并获取智慧物流系统处理后的数据。</p>
+                        </div>
+                        <div class="demon-info theme-demo mt-30 pl-20 pb-30 pt-20">
+                            <div class="video-area">
+                                <div class="video-thum ">
+                                    <div class="inner-image"><img src="assets/img/video-bg-2.png" alt=""></div>
+                                    <div class="result-container">
+                                        <label>
+                                            <img class="local-test-result after-deal-image" src="" alt="" >
+                                            <div class="local-test-result">
+                                                <video class="display-video after-deal-video">
+                                                    <source src="assets/video/demo.mp4" type="video/mp4">
+                                                </video>
+                                                <a id="test-video-play" class="popup-video animate" title="播放视频"><i class="fas fa-play"></i></a>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-container theme-demo">
+                        <h3>图片/视频处理</h3>
+                        <div class="upload-select-start">
+                            <select class="upload-select" name="upload-select" title="upload-select" data-target="none">
+                                <option value="">请选择...</option>
+                                <option value="option1">目标检测</option>
+                                <option value="option2">目标追踪</option>
+                                <option value="option3">实例分割</option>
+                                <option value="option4">pose检测</option>
+                                <option value="option5">自主避障</option>
+                                <option value="option6">人脸识别</option>
+                                <option value="option7">货物分拣</option>
+                                <option value="option8">局部路径</option>
+                                <option value="option9">全局路径</option>
+                            </select>
+                            <button class="start-process">开始处理</button>
+                        </div>
+                        <div class="them-switch button-group mt-10 mb-15">
+                            <button class="is-checked local-load" data-target="image" id="local-load-image"><strong>图片处理</strong></button>
+                            <button class="local-load" data-target="video" id="local-load-video"><strong>视频处理</strong></button>
+                        </div>
+                        <div class="upload-box">
+                            <div class="display-result load-image-container">
+                                <input type="file" class="image-test imageUpload" id="transshipmentImageUpload" accept=".png, .jpg, .jpeg, .webp" />
+                                <label for="transshipmentImageUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.png, .jpg, .jpeg, .webp .bmp .</p>
+                                        <p>最大大小：20MB</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="display-result load-video-container">
+                                <input type="file" class="video-test videoUpload" id="transshipmentVideoUpload" data-target="pose_video" accept=".mp4, .avi, .mov., WebM, .gif" />
+                                <label for="transshipmentVideoUpload">
+                                    <div class="upload-content">
+                                        <p>点击上传或拖放</p>
+                                        <p>支持的格式：.mp4, .avi, .mov .WebM .gif</p>
+                                        <p>建议视时长不超过3分钟</p>
+                                    </div>
+                                </label>
+                                <div class="error mt-10 mb-10" id="error"></div>
+                            </div>
+                        </div>
+                        <div class="img-preview preview-container">
+                            <img src="assets/img/undeal-1.png" alt="Upload Icon" class="upload-icon" >
+                        </div>
+                        <div class="video-preview preview-container">
+                            <video>
+                                <source src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="response">
+                            <h3>Response:</h3>
+                            <pre id="cargoResponseText"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 module-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>智能续航模块</h2>
+                            <p>货物寄存智能续航模块是专为货物寄存场景打造的智能化解决方案。
+                                它结合先进的智能感知技术、能源管理算法和自动化控制手段，实现对货物寄存设备的高效管理。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 technology-details">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>智能续航技术</h2>
+                            <p>模块实时监测货物寄存设备的运行状态、能源消耗情况以及寄存货物的相关信息。
+                                通过智能续航策略，优化设备能源使用，延长续航时间，降低运营成本。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-video-show theme-wd pl-15 mb-30 future-view">
+                    <div class="demo-area pt-30 pb-65">
+                        <div class="section-title">
+                            <h2>智能续航未来展望</h2>
+                            <p>未来，货物寄存智能续航模块将结合更多智能技术，提升货物寄存服务的质量和效率。
+                                预计会实现更高效的能源使用和管理策略，推动智能物流发展。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- </div> -->
+    <!-- ============ details-are-end ====================== -->
+
+    <!-- ============= fotter-area-start ================ -->
+    <div class="fotter-area black-bg pt-100 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="fotter-widget">
+                        <div class="fotter-logo">
+                            <a href="index.html"><img src="assets/img/logo-white.png" alt=""></a>
+                        </div>
+                        <p>填写网页的介绍 todo</p>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#"><i class="flaticon-call"></i></a></li>
+                                <li><a href="#"><i class="flaticon-mail"></i></a></li>
+                                <li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                <li><a href="#"><i class="flaticon-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-6">
+                    <div class="fotter-widget ">
+                        <div class="fotter-subtitle">
+                            <h5>快速跳转</h5>
+                        </div>
+                        <div class="fotter-link">
+                            <ul>
+                                <li><a href="about.html">关于我们</a></li>
+                                <li><a href="service.html">产品</a></li>
+                                <li><a href="work.html">项目</a></li>
+                                <li><a href="work-details.html">技术细节</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-6">
+                    <div class="fotter-widget ">
+                        <div class="fotter-subtitle">
+                            <h5>技术支持</h5>
+                        </div>
+                        <div class="fotter-link">
+                            <ul>
+                                <li><a href="#">Apps Development</a></li>
+                                <li><a href="#">Cloud Computing</a></li>
+                                <li><a href="#">UIUX Design</a></li>
+                                <li><a href="#">IT Consulting</a></li>
+                                <li><a href="#">Cyber Security</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-6">
+                    <div class="fotter-widget ">
+                        <div class="fotter-subtitle">
+                            <h5>联系我们</h5>
+                        </div>
+                        <div class="contact-info">
+                            <ul>
+                                <li><i class="flaticon-call"></i>+1254 6587 2354</li>
+                                <li><i class="flaticon-mail"></i>info@example.com</li>
+                                <li><i class="flaticon-pin"></i>E. Union Ave Suite 1100.
+                                    Denver, CO 3247 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                    <div class="fotter-widget ">
+                        <div class="fotter-subtitle">
+                            <h5>提供建议</h5>
+                        </div>
+                        <p>提建议介绍 todo</p>
+                        <div class="subscibe-area">
+                            <!--todo 减淡字体颜色-->
+                            <input class="last_input" type="text" placeholder="Your suggestion">
+                            <a href="#" class="btn subscribe-btn">提交</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right-area text-center mt-40">
+                <span>Computer Design Competition © nefu team. <a target="_blank" href="team.html" title="队伍">nefu team</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- ============= fotter-area-end ================== -->
+
+    <!-- ============= Login & Register Modal Start ================ -->
+    <div id="signinModal" class="modal" data-easein="expandIn" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Login
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="#" class="form-signin-signup">
+                        <label for="inputEmail" class="sr-only">Email Address</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signupModal" class="modal" data-easein="expandIn" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Signup
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="#" class="form-signin-signup">
+                        <label for="first_name" class="sr-only">First Name</label>
+                        <input type="text" id="first_name" class="form-control" placeholder="First Name" required >
+                        <label for="last_name" class="sr-only">Last Name</label>
+                        <input type="text" id="last_name" class="form-control" placeholder="Last Name" required >
+
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Email Address" required >
+
+                        <label for="username" class="sr-only">Username</label>
+                        <input type="text" id="username" class="form-control" placeholder="Username" required >
+
+                        <label for="Password" class="sr-only">Password</label>
+                        <input type="password" id="Password" class="form-control" placeholder="Password" required>
+                        <label for="confirm_password" class="sr-only">Confirm Password</label>
+                        <input type="password" id="confirm_password" class="form-control" placeholder="Confirm Password" required>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============= Login & Register Modal End ================ -->
+
+    <!-- Start scroll bottom to top -->
+    <div class="scroll-up" id="scroll" style="display: none;">
+        <a href="#"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <!-- End scroll bottom to top -->
+
+    <!-- JS here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/velocity.min.js"></script>
+    <script src="assets/js/velocity.ui.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script src="assets/js/work-details.js"></script>
+</body>
+</html>
+

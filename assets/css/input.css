@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* 黑色，透明度为 50% */
+}
